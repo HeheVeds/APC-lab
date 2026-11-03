@@ -1,0 +1,11 @@
+Roll_No,Name,Department,Semester,Subject,Original_Marks,Makeup_Marks,Status
+CS2023005,Aditya Kulkarni,Computer Science,Semester 1,Mathematics_1,34,55,Pass
+CS2023007,Rahul Deshmukh,Computer Science,Semester 1,Mathematics_1,28,48,Pass
+CS2023007,Rahul Deshmukh,Computer Science,Semester 1,Basic_Electrical,32,35,Fail
+CS2023007,Rahul Deshmukh,Computer Science,Semester 2,Mathematics_2,35,42,Pass
+CS2023007,Rahul Deshmukh,Computer Science,Semester 2,Digital_Logic,30,36,Fail
+CS2023012,Ishwari Salunkhe,Computer Science,Semester 1,Mathematics_1,31,50,Pass
+CS2023012,Ishwari Salunkhe,Computer Science,Semester 2,Digital_Logic,38,52,Pass
+CS2023014,Tejas Mane,Computer Science,Semester 1,Mathematics_1,38,46,Pass
+CS2023014,Tejas Mane,Computer Science,Semester 1,Physics,36,50,Pass
+CS2023014,Tejas Mane,Computer Science,Semester 2,Digital_Logic,35,38,Fail

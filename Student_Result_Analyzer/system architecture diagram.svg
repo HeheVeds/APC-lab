@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1262.6329999999998 997.3000000000001" width="1262.6329999999998" height="997.3000000000001" style="--bg:#18181B;--fg:#F4F4F5;--line:#71717A;--muted:#A1A1AA;--surface:#27272A;--border:#3F3F46;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="Data_Sources" data-label="Data Ingestion Layer">
+  <rect x="134.32949999999988" y="40" width="993.9739999999999" height="96.9" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="134.32949999999988" y="40" width="993.9739999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="146.32949999999988" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Data Ingestion Layer</text>
+</g>
+<g class="subgraph" data-id="Validation" data-label="Validation &amp; Security Layer">
+  <rect x="499.86399999999986" y="190.9" width="262.905" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="499.86399999999986" y="190.9" width="262.905" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="511.86399999999986" y="204.9" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Validation &amp; Security Layer</text>
+</g>
+<g class="subgraph" data-id="Core_Engine" data-label="OOP Analytical Processing Engine">
+  <rect x="491.3424999999998" y="364.70000000000005" width="424.79775" height="385" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="491.3424999999998" y="364.70000000000005" width="424.79775" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="503.3424999999998" y="378.70000000000005" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">OOP Analytical Processing Engine</text>
+</g>
+<g class="subgraph" data-id="Presentation" data-label="User Interface &amp; Presentation Layer">
+  <rect x="40" y="809.7" width="1182.6329999999998" height="147.60000000000002" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="809.7" width="1182.6329999999998" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="823.7" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">User Interface &amp; Presentation Layer</text>
+</g>
+<polyline class="edge" data-from="Data_Sources" data-to="VAL" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="631.3164999999999,136.9 631.3164999999999,234.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="VAL" data-to="STUD" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="631.3164999999998,288.7 631.3164999999997,408.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ANALYZER" data-to="UI" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="631.3164999999998,615.0000000000001 631.3164999999998,639 214.05999999999997,639 214.05999999999997,853.7" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ANALYZER" data-to="TK" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="631.3164999999998,615.0000000000001 631.3164999999998,639 533.7269999999999,639 533.7269999999999,853.7" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ANALYZER" data-to="CHARTS" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="631.3164999999998,615.0000000000001 631.3164999999998,639 829.3114999999998,639 829.3114999999998,853.7" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ANALYZER" data-to="REP" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="631.3164999999998,615.0000000000001 631.3164999999998,639 1098.9609999999998,639 1098.9609999999998,853.7" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="STUD" data-to="ANALYZER" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="631.3164999999998,479.40000000000003 631.3164999999998,527.4000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ANALYZER" data-to="DB" data-style="solid" data-arrow-start="true" data-arrow-end="true" points="631.3164999999998,615.0000000000001 631.3164999999998,639 765.0512499999998,639 765.0512499999998,663" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead-start)" />
+<g class="node" data-id="CSV1" data-label="Semester 1 (.csv / .xlsx)" data-shape="rectangle">
+  <rect x="357.36449999999985" y="84" width="174.58900000000003" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="444.6589999999999" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Semester 1 (.csv / .xlsx)</text>
+</g>
+<g class="node" data-id="CSV2" data-label="Semester 2 (.csv / .xlsx)" data-shape="rectangle">
+  <rect x="559.9534999999998" y="84" width="179.035" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="649.4709999999999" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Semester 2 (.csv / .xlsx)</text>
+</g>
+<g class="node" data-id="CSV3" data-label="Semester 3 (.csv / .xlsx)" data-shape="rectangle">
+  <rect x="150.32949999999988" y="84" width="179.035" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="239.84699999999987" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Semester 3 (.csv / .xlsx)</text>
+</g>
+<g class="node" data-id="CSV4" data-label="Makeup Exam (.csv)" data-shape="rectangle">
+  <rect x="766.9884999999997" y="84" width="159.769" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="846.8729999999997" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Makeup Exam (.csv)</text>
+</g>
+<g class="node" data-id="CSV5" data-label="Backup Exam (.csv)" data-shape="rectangle">
+  <rect x="954.7574999999997" y="84" width="157.546" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1033.5304999999996" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Backup Exam (.csv)</text>
+</g>
+<g class="node" data-id="VAL" data-label="&quot;ResultValidator
+• Regex Roll No Validation: ^[A-Z" data-shape="rectangle">
+  <rect x="515.8639999999998" y="234.9" width="230.90499999999994" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="631.3164999999998" y="261.8" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="631.3164999999998" dy="-3.9000000000000012">&quot;ResultValidator</tspan><tspan x="631.3164999999998" dy="16.900000000000002">• Regex Roll No Validation: ^[A-Z</tspan></text>
+</g>
+<g class="node" data-id="STUD" data-label="Student OOP Model (Encapsulation)
+• Grades: O, A+, A, B, C, F
+• Backlog Detection (&lt; 40 marks)" data-shape="rectangle">
+  <rect x="507.3424999999998" y="408.70000000000005" width="247.94799999999995" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="631.3164999999998" y="444.05000000000007" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="631.3164999999998" dy="-12.350000000000001">Student OOP Model (Encapsulation)</tspan><tspan x="631.3164999999998" dy="16.900000000000002">• Grades: O, A+, A, B, C, F</tspan><tspan x="631.3164999999998" dy="16.900000000000002">• Backlog Detection (&lt; 40 marks)</tspan></text>
+</g>
+<g class="node" data-id="ANALYZER" data-label="ResultAnalyzer (Pandas &amp; NumPy)
+• Multi-Semester Aggregation
+• Growth/Dip Delta: Sem 2 - Sem 1
+• Ranking: Top 5 &amp; Bottom 5" data-shape="rectangle">
+  <rect x="509.9359999999998" y="527.4000000000001" width="242.76099999999997" height="87.60000000000001" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="631.3164999999998" y="571.2" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="631.3164999999998" dy="-20.8">ResultAnalyzer (Pandas &amp; NumPy)</tspan><tspan x="631.3164999999998" dy="16.900000000000002">• Multi-Semester Aggregation</tspan><tspan x="631.3164999999998" dy="16.900000000000002">• Growth/Dip Delta: Sem 2 - Sem 1</tspan><tspan x="631.3164999999998" dy="16.900000000000002">• Ranking: Top 5 &amp; Bottom 5</tspan></text>
+</g>
+<g class="node" data-id="DB" data-label="Database Layer
+• SQLite3 Local Storage
+• Neon Serverless PostgreSQL Ready" data-shape="rectangle">
+  <rect x="629.9622499999998" y="663" width="270.178" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="765.0512499999998" y="698.35" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="765.0512499999998" dy="-12.350000000000001">Database Layer</tspan><tspan x="765.0512499999998" dy="16.900000000000002">• SQLite3 Local Storage</tspan><tspan x="765.0512499999998" dy="16.900000000000002">• Neon Serverless PostgreSQL Ready</tspan></text>
+</g>
+<g class="node" data-id="UI" data-label="Streamlit Interactive Web Dashboard (Port 8501)" data-shape="rectangle">
+  <rect x="56" y="853.7" width="316.11999999999995" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="214.05999999999997" y="872.1500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Streamlit Interactive Web Dashboard (Port 8501)</text>
+</g>
+<g class="node" data-id="TK" data-label="Tkinter Desktop GUI Client (Alternative)" data-shape="rectangle">
+  <rect x="400.11999999999995" y="853.7" width="267.2139999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="533.7269999999999" y="872.1500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Tkinter Desktop GUI Client (Alternative)</text>
+</g>
+<g class="node" data-id="REP" data-label="ReportGenerator
+• Printable Transcript (.txt)
+• Faculty Batch Summary (.txt)
+• Consolidated Dataset (.csv)" data-shape="rectangle">
+  <rect x="991.2889999999998" y="853.7" width="215.34399999999997" height="87.60000000000001" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1098.9609999999998" y="897.5" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1098.9609999999998" dy="-20.8">ReportGenerator</tspan><tspan x="1098.9609999999998" dy="16.900000000000002">• Printable Transcript (.txt)</tspan><tspan x="1098.9609999999998" dy="16.900000000000002">• Faculty Batch Summary (.txt)</tspan><tspan x="1098.9609999999998" dy="16.900000000000002">• Consolidated Dataset (.csv)</tspan></text>
+</g>
+<g class="node" data-id="CHARTS" data-label="Matplotlib Chart Engine
+• Trendlines, Bar Charts, Donut Charts" data-shape="rectangle">
+  <rect x="695.3339999999998" y="853.7" width="267.9549999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="829.3114999999998" y="880.6" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="829.3114999999998" dy="-3.9000000000000012">Matplotlib Chart Engine</tspan><tspan x="829.3114999999998" dy="16.900000000000002">• Trendlines, Bar Charts, Donut Charts</tspan></text>
+</g>
+</svg>
